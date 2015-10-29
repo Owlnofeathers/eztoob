@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EZToob</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				<h1>EZ<span>Toob</span></h1>
+				<h3>Search YouTube videos <em>without</em> YouTube</h3>
+			</header>
+
+			<section class="search-form">
+				<form id="search-form" name="search-form" onsubmit="return search()">
+					<div class="fieldcontainer">
+						<input type="search" id="query" class="search-field" placeholder="Search...">
+						<input type="submit" name="search-btn" id="search-btn" value="">
+					</div>
+				</form>
+
+				<ul id="results"></ul>
+				<div id="buttons"></div>
+			</section>
+
+			<section id="description">
+				<p>This site simply searches Youtube and lists the results on the same page. Videos open and play in a lightbox, never leaving this site.</p>
+			</section>
+
+			<footer>
+    			<p><small>&copy; 2015 &middot; <a href="http://ajamesb.com/" title="Site By: Adam Bailey" target="_BLANK"><strong>AB</strong></p>
+			</footer>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".fancybox").fancybox();
+			});
+		</script>
+	</body>
+</html>
